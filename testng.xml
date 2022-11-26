@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="tests" name="Suite">
+
+	<test name="Test1">
+		<parameter name="browser" value="chrome" />
+		<parameter name="version" value="86.0" />
+		<parameter name="platform" value="WIN8" />
+		<classes>
+			<class name="advTask.TestScenario" />
+		</classes>
+	</test>
+
+	<test name="Test2">
+		<parameter name="browser" value="Edge" />
+		<parameter name="version" value="87.0" />
+		<parameter name="platform" value="WIN8" />
+		<classes>
+			<class name="advTask.TestScenario" />
+		</classes>
+	</test>
+
+
+</suite> <!-- Suite -->
